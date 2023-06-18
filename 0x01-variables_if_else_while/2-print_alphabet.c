@@ -1,34 +1,18 @@
 #include <stdio.h>
-
 /**
- *main - entry point
- *Description: combo 2
+ *main - starting point
+ *Description: pritns alphabet
  *Return: 0
  */
 
 int main(void)
 {
-	int i = 48;
+	char a;
 
-	while (i < 58)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		int x = 48;
-
-		while (x < 58)
-		{
-			putchar(i);
-			putchar(x);
-			if (i == 57 && x == 57)
-			{
-				break;
-			}
-				putchar(44);
-				putchar(32);
-			x++;
-		}
-		i++;
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
 }
-
