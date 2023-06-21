@@ -1,1 +1,1 @@
-first redme file 0x02 nested funtionts
+0x02-functions_nested_loops
