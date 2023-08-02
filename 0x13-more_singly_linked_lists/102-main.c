@@ -23,7 +23,6 @@ int main(void)
     add_nodeint(&head2, 98);
     add_nodeint(&head2, 402);
     add_nodeint(&head2, 1024);
-    print_listint_safe(head2);
     head = NULL;
     node = add_nodeint(&head, 0);
     add_nodeint(&head, 1);
@@ -33,9 +32,6 @@ int main(void)
     node->next = add_nodeint(&head, 98);
     add_nodeint(&head, 402);
     add_nodeint(&head, 1024);
-    print_listint_safe(head);
-    free_listint_safe(&head2);
-    free_listint_safe(&head);
     printf("%p, %p\n", (void *)head2, (void *)head);
     return (0);
 }
